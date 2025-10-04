@@ -1,0 +1,30 @@
+import java.util.*;
+class Animal {
+    void eat() {
+        System.out.println("Animals eat food.");
+    }
+}
+class Cat extends Animal {
+    void walk() {
+        System.out.println("Mammals can walk.");
+    }
+}
+
+
+class Dog extends Cat {
+    void bark() {
+        System.out.println("Dog barks loudly.");
+    }
+}
+
+
+public class MultilevelInheritanceDemo {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+
+        
+        myDog.eat();   
+        myDog.walk();  
+        myDog.bark();  
+    }
+}
