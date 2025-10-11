@@ -1,0 +1,31 @@
+// Define the interface
+interface Playable {
+    void play(); // Abstract method to be implemented
+}
+
+// Implementing class: Cricket
+class Cricket implements Playable {
+    public void play() {
+        System.out.println("Playing Cricket");
+    }
+}
+
+// Implementing class: Football
+class Football implements Playable {
+    public void play() {
+        System.out.println("Playing Football");
+    }
+}
+
+// Main class to test the program
+public class GameTest {
+    public static void main(String[] args) {
+        // Create instances of Cricket and Football
+        Playable cricket = new Cricket();
+        Playable football = new Football();
+
+        // Call the play() method
+        cricket.play();    // Output: Playing Cricket
+        football.play();   // Output: Playing Football
+    }
+}
